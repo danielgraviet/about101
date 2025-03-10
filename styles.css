@@ -242,3 +242,69 @@ h1 {
     background-color: #fdf2d9;
     transition: background-color 0.3s ease;
 }
+
+/* quiz section */
+.interactive-quiz {
+    background: #f1f8e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.interactive-quiz h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interactive-quiz i {
+    color: #27ae60;
+    margin-right: 10px;
+}
+
+#quiz-container {
+    margin-top: 15px;
+}
+
+#question {
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.option-btn:hover {
+    background: #2980b9;
+}
+
+#submit-btn {
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background: #d35400;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 15px;
+}
