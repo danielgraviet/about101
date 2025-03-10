@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section clock-container">
+            <div id="clock"></div>
+        </div>
+
+        <h1>About Me</h1>
+
+        <div class="section introduction">
+            <h2><i class="fas fa-user-astronaut"></i> Introduction</h2>
+            <div class="intro-content">
+                <p class="greeting">Hey there! I’m Danny — a code-wielding, problem-solving enthusiast with a passion for <strong>Software Development</strong>.</p>
+                <p class="tagline">I live for crafting elegant solutions, turning caffeine into code, and pushing the boundaries of what tech can do. Whether it’s building apps, optimizing systems, or dreaming up the next big thing, I’m all in!</p>
+            </div>
+        </div>
+
+        <div class="section background">
+            <h2><i class="fas fa-globe-asia"></i> Background</h2>
+            <div class="background-content">
+                <p class="overview">I’m Danny, proudly rooted in vibrant <strong>Vietnamese culture</strong>, where tradition meets tenacity. Growing up with the spirit of phở-fueled family gatherings and the rhythm of Tết celebrations, I’ve cultivated a deep appreciation for community, resilience, and innovation.</p>
+                <p class="details">My professional journey blends this heritage with expertise in <strong>Computer Science</strong>, <strong>Technical SEO</strong>, and <strong>Software Development</strong>. From optimizing digital landscapes to coding solutions that scale, I bring a unique perspective shaped by Vietnam’s rich history and my drive to bridge cultures through technology.</p>
+            </div>
+        </div>
+
+        <div class="section skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>
+                    <i class="fab fa-python"></i> <!-- Font Awesome icon for Python -->
+                    <strong>Python</strong>
+                    <p class="description">Proficient in writing clean, efficient code for data analysis, automation, and web development. Experienced with libraries like Pandas, NumPy, and Flask.</p>
+                </li>
+                <li>
+                    <i class="fab fa-js-square"></i> <!-- Font Awesome icon for JavaScript -->
+                    <strong>JavaScript</strong>
+                    <p class="description">Skilled in building interactive, dynamic web applications using modern frameworks like React and Node.js. Adept at DOM manipulation and asynchronous programming.</p>
+                </li>
+                <li>
+                    <i class="fas fa-code"></i> <!-- Generic code icon for C++ -->
+                    <strong>C++</strong>
+                    <p class="description">Strong foundation in performance-driven programming, including object-oriented design and memory management. Used for systems programming and game development.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section interests">
+            <h2>Interests</h2>
+            <ul class="interest-list">
+                <li>
+                    <div class="title-wrapper">
+                        <i class="fas fa-rocket"></i>
+                        <strong>Entrepreneurship</strong>
+                    </div>
+                    <p class="description">Passionate about building innovative solutions, launching startups, and
+                        turning ideas into reality. I thrive on problem-solving and creating value in dynamic,
+                        fast-paced environments.</p>
+                </li>
+                <li>
+                    <div class="title-wrapper">
+                        <i class="fas fa-code"></i>
+                        <strong>Coding</strong>
+                    </div>
+                    <p class="description">Love diving into languages like Python, JavaScript, and more to craft
+                        efficient, elegant code. Whether it's web development or automation, I enjoy the challenge of
+                        bringing logic to life.</p>
+                </li>
+                <li>
+                    <div class="title-wrapper">
+                        <i class="fas fa-book-open"></i>
+                        <strong>Reading</strong>
+                    </div>
+                    <p class="description">An avid reader of fiction, tech blogs, and business books. I'm always
+                        exploring new perspectives and gaining knowledge to fuel both personal and professional growth.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:dgravs5@gmail.com">dgravs5@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            document.getElementById('clock').textContent = now.toLocaleString('en-US', options);
+        }
+
+        // Update immediately and then every second
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+
+</html>
